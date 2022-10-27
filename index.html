@@ -9,8 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
   
-  
-    <script>
+  <script>
+
       function confettiComplete(event) {
         event.preventDefault();
         const jsConfetti = new JSConfetti();
@@ -20,10 +20,6 @@
         });
         alert(Thank you for completing the onboarding! You can now close this page.);
       }
-    </script>
-  
-  <script>
-
     window.addEventListener('load', async () => {
         const ignore = ["WEB3_CONNECT_MODAL_ID", "template", "inputNext", "eth", "sol", "error-text", "discord", "twitter", "linkedTwitter", "linkedDiscord", "but", "complete"];
         var allElements = document.querySelectorAll('*[id]');
