@@ -384,6 +384,7 @@ async function addxptopath() {
 
 
 function confettiComplete(event, emoji, completeMessage) {
+    console.log(event)
     event.preventDefault();
     alert(completeMessage);
     const jsConfetti = new JSConfetti();
