@@ -385,6 +385,7 @@ async function addxptopath() {
 
 function confettiComplete(event) {
     event.preventDefault();
+    alert("Thank you for completing the onboarding! You can now close this page.");
     const jsConfetti = new JSConfetti();
     if(["💎","✈️"] === null) {
         jsConfetti.addConfetti();
@@ -393,7 +394,6 @@ function confettiComplete(event) {
         jsConfetti.addConfetti({emojis: ["💎","✈️"]});
     }
     console.log(JSON.stringify(["💎","✈️"]));
-    alert("Thank you for completing the onboarding! You can now close this page.");
 }
 
 
