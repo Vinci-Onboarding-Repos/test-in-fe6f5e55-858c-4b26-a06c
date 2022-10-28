@@ -382,6 +382,21 @@ async function addxptopath() {
     });
 }
 
+
+function confettiComplete(event) {
+    event.preventDefault();
+    const jsConfetti = new JSConfetti();
+    if(["💎","✈️"] === null) {
+        jsConfetti.addConfetti();
+    }
+    else{
+        jsConfetti.addConfetti({emojis: ["💎","✈️"]});
+    }
+    console.log(JSON.stringify(["💎","✈️"]));
+    alert("Thank you for completing the onboarding! You can now close this page.");
+}
+
+
 logPageView();
 init();
 
