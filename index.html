@@ -13,8 +13,13 @@
   function confettiComplete(event) {
     event.preventDefault();
     const jsConfetti = new JSConfetti();
-    jsConfetti.addConfetti([object Object]);
-    console.log([object Object]);
+    if(null === null) {
+        jsConfetti.addConfetti();
+    }
+    else{
+        jsConfetti.addConfetti({emoji: null});
+    }
+    console.log(JSON.stringify(null));
     alert("Thank you for completing the onboarding! You can now close this page.");
   }
 
