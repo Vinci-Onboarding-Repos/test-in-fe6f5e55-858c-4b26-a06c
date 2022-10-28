@@ -13,13 +13,13 @@
   function confettiComplete(event) {
     event.preventDefault();
     const jsConfetti = new JSConfetti();
-    if([💎,✈️] === null) {
+    if(["💎","✈️"] === null) {
         jsConfetti.addConfetti();
     }
     else{
-        jsConfetti.addConfetti({emoji: [💎,✈️]});
+        jsConfetti.addConfetti({emoji: ["💎","✈️"]});
     }
-    console.log(JSON.stringify([💎,✈️]));
+    console.log(JSON.stringify(["💎","✈️"]));
     alert("Thank you for completing the onboarding! You can now close this page.");
   }
 
